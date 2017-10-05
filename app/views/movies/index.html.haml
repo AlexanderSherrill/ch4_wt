@@ -9,6 +9,7 @@
       %th Release Date
       %th More Info
   %tbody
+    = link_to 'Add new movie', new_movie_path
     - @movies.each do |movie|
       %tr
         %td= movie.title 
